@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &249990984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3316947968284832955, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+  m_PrefabInstance: {fileID: 6208831963816882321}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &275346784
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 363527139}
   - component: {fileID: 363527140}
+  - component: {fileID: 363527142}
   m_Layer: 0
   m_Name: Trolley Far Limit
   m_TagString: Untagged
@@ -199,6 +205,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 0.5
   color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &363527142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363527138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbd29cc9e0acf04e8012218971c5e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8658184023392465626}
 --- !u!1 &601031389
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 601031390}
   - component: {fileID: 601031391}
+  - component: {fileID: 601031393}
   m_Layer: 0
   m_Name: Trolley Near Limit
   m_TagString: Untagged
@@ -245,10 +265,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 0.5
   color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &601031393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601031389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbd29cc9e0acf04e8012218971c5e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8658184023392465626}
 --- !u!108 &705507994 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 3888057769286396419, guid: 19b149fee4b8fe142aa0a5a00d0fd227, type: 3}
   m_PrefabInstance: {fileID: 9183527280945142321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1175705764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6427020088134837237, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+  m_PrefabInstance: {fileID: 6208831963816882321}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1462821905
 GameObject:
@@ -312,6 +350,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1595501524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1064534356098386809, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+  m_PrefabInstance: {fileID: 6208831963816882321}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2004024692 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2854765427519211690, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
@@ -682,6 +731,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1064534356098386809, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2038358580488048841, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -709,6 +762,34 @@ PrefabInstance:
     - target: {fileID: 3255940932356934082, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869204077296980378, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869204077296980378, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869204077296980378, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8658184023395725017}
+    - target: {fileID: 3869204077296980378, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869204077296980378, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RotateRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869204077296980378, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CraneMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869204077296980378, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5002593541015198102, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
       propertyPath: m_Pivot.x
@@ -794,6 +875,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7530662998471054032, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530662998471054032, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530662998471054032, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: 5f84990c90bd443b868e995828541cd8, type: 3}
+    - target: {fileID: 7530662998471054032, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530662998471054032, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530662998471054032, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CraneMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530662998471054032, guid: 85e1ce8fbcff6f042a34bee9779e8146, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -808,7 +917,7 @@ Transform:
   m_GameObject: {fileID: 8658184023392465616}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -22, y: 41, z: 0}
+  m_LocalPosition: {x: -22.15, y: 41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -885,6 +994,7 @@ GameObject:
   - component: {fileID: 8658184023392300784}
   - component: {fileID: 8658184023395725022}
   - component: {fileID: 8658184023394724894}
+  - component: {fileID: 8658184023395725023}
   m_Layer: 0
   m_Name: Trolley
   m_TagString: Untagged
@@ -905,6 +1015,7 @@ GameObject:
   - component: {fileID: 8658184023394724880}
   - component: {fileID: 8658184023395725010}
   - component: {fileID: 8658184023395725011}
+  - component: {fileID: 8658184023395725012}
   m_Layer: 0
   m_Name: Hook
   m_TagString: Untagged
@@ -923,6 +1034,7 @@ GameObject:
   - component: {fileID: 8658184023392300794}
   - component: {fileID: 8658184023395725016}
   - component: {fileID: 8658184023394724888}
+  - component: {fileID: 8658184023395725017}
   m_Layer: 0
   m_Name: Tower Crane
   m_TagString: Untagged
@@ -959,6 +1071,7 @@ GameObject:
   - component: {fileID: 8658184023392300798}
   - component: {fileID: 8658184023395725020}
   - component: {fileID: 8658184023394724892}
+  - component: {fileID: 8658184023395725021}
   m_Layer: 0
   m_Name: Cable
   m_TagString: Untagged
@@ -1232,6 +1345,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8658184023395725012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8658184023392465618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04b89f52c306ab647a278b276aa9662b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cable: {fileID: 8658184023392465630}
 --- !u!33 &8658184023395725016
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1240,6 +1366,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8658184023392465626}
   m_Mesh: {fileID: 4300006, guid: b75ef94dd86ecb34eb9e252b92b6761c, type: 3}
+--- !u!114 &8658184023395725017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8658184023392465626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c59f4eb1b1045d4590019292cca2f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cRotSpeed: 24
+  rButton: {fileID: 1175705764}
+  lButton: {fileID: 249990984}
 --- !u!33 &8658184023395725018
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1256,6 +1397,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8658184023392465630}
   m_Mesh: {fileID: 4300002, guid: b75ef94dd86ecb34eb9e252b92b6761c, type: 3}
+--- !u!114 &8658184023395725021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8658184023392465630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9046ca1a2bc7ea445be23422544b87e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trolley: {fileID: 8658184023392465616}
+  liftMax: 0
+  liftMin: 0
 --- !u!33 &8658184023395725022
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1264,6 +1420,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8658184023392465616}
   m_Mesh: {fileID: 4300000, guid: b75ef94dd86ecb34eb9e252b92b6761c, type: 3}
+--- !u!114 &8658184023395725023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8658184023392465616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5ec6884e4ad6e46b3a85e14c432884, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crane: {fileID: 8658184023392465626}
+  nearLimit: {fileID: 601031389}
+  farLimit: {fileID: 363527138}
+  tMoveSpeed: 10
+  trolleySlider: {fileID: 1595501524}
+  tRelatPos: {x: 0, y: 0, z: 0}
+  tRelatRot: {x: 0, y: 0, z: 0}
 --- !u!1001 &8685051053018706934
 PrefabInstance:
   m_ObjectHideFlags: 0
